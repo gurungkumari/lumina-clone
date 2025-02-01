@@ -1,0 +1,87 @@
+
+
+*{
+    margin: 0;
+    padding:0;
+}
+.logo{
+    font-size:12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-left: 40px;
+}
+.hero{
+    display: block;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20%;
+}
+.nav-item:hover{
+    
+    background-color: bisque;
+}
+.Passionate{
+    background-color: bisque;
+}
+.Innovation {
+    background-color: bisque;
+}
+
+
+
+
+
+@media(max-width:600px){
+    .hero{
+        flex-direction: column;
+        height:100%;
+    }
+
+    
+}
+.contact>*{
+    list-style: none;
+}
+
+
+
+
+
+
+
+.gallery{
+    
+    display:grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat (3,200px) ;
+    gap: 10px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-radius: 10px;
+    
+}
+    .gallery >*{
+        display: block;
+        justify-content: space-between;
+        gap:30px;
+        margin: 10px;
+        padding: 10px;
+        
+    }
+    
+      
+      #image:hover{
+        transform: scale(2.2);
+        
+      }
+      
+
+      
+
+    .footer{
+        display:flex;
+        gap: 50px;
+        justify-content: space-between;
+    }
+        
