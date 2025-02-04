@@ -12,6 +12,7 @@
 }
 .hero{
     display: block;
+
     font-family: sans-serif;
     justify-content: center;
     align-items: center;
@@ -27,61 +28,56 @@
 .Innovation {
     background-color: bisque;
 }
-
-
-
-
-
 @media(max-width:600px){
     .hero{
         flex-direction: column;
         height:100%;
-    }
-
-    
+    }  
 }
 .contact>*{
     list-style: none;
 }
 
-
-
-
-
-
-
 .gallery{
-    
+    width:1000px;
     display:grid;
     grid-template-columns: repeat(3, 200px);
     grid-template-rows: repeat (3,200px) ;
     gap: 10px;
     justify-content: space-between;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 5px;
     
 }
-    .gallery >*{
-        display: block;
-        justify-content: space-between;
-        gap:30px;
-        margin: 10px;
-        padding: 10px;
-        
-    }
+.gallery-item img:hover{
     
-      
-      #image:hover{
-        transform: scale(2.2);
-        
-      }
-      
+transition: transform 0.3s case, opacity 0.3s ease;
+width:500 px;
+display: grid;
+grid-template-columns: repeat(3,200 );
+grid-template-rows: repeat (3,200 ) ;
 
-      
+margin:5px;
+padding: 5px;
+gap: 5px
 
-    .footer{
-        display:flex;
-        gap: 50px;
-        justify-content: space-between;
-    }
-        
+}
+
+.gallery >*{
+    display: inline-block;
+    justify-content: space-between;
+    gap:10px;
+    margin: 5px;
+    padding: 5px;
+    
+}
+  .gallery-item:hover {
+    transform: scale(1.1)
+  }
+  .footer{
+    width:1000px;
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+  }
+  
